@@ -8,7 +8,9 @@
         <a href="{% url 'logout' %}">Logout</a>
         <a href="{% url 'password_change' %}">Change password</a>
     {% else %}
-        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'login' %}">Login</a>
         <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'password_reset' %}">Change password with email</a>
+        <a href="{% url 'set_new_password' %}">New password</a>
     {% endif %}
 {% endblock %}
