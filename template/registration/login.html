@@ -9,8 +9,9 @@
             <form method="post" action="{% url 'login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
+                <a href="{% url 'password_reset' %}">Забыли пароль?</a>
                 <div class="d-grid gap-2 d-md-block mt-2">
-                <button type="submit" class="btn btn-dark">Авторизоваться</button>
+                <button type="submit" class="btn btn-dark">Войти</button>
              </div>
             </form>
         </div>
